@@ -8,14 +8,7 @@ export default function Home({ data }) {
   return (
     <>
       <Banner />
-      <div
-        className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200"
-        style={
-          {
-            // backgroundColor: "red",
-          }
-        }
-      >
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
         <Head>
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
@@ -23,9 +16,9 @@ export default function Home({ data }) {
 
         <BreedCards data={data.message} />
 
-        {/* <div className="">
+        {/* < className="">
         <Link href="/random">Hoi</Link>
-      </div> */}
+      </
 
         {/* <footer className="flex items-center justify-center w-full h-24 border-t">
         <a

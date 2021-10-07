@@ -1,4 +1,4 @@
-import Link from "next/link.";
+import Link from "next/link";
 // import headerStyles from "../styles/Banner.module.css";
 const Banner = () => {
   return (
@@ -16,14 +16,9 @@ const Banner = () => {
           <h1 className="text-white text-lg mb-7">
             Let's explore Dogs Breeds🐶
           </h1>
-          {/* <p>
-            A initiative non profit project where users can contact us an add
-            their art works or products which will be accessed by other users,
-            payment gateways are included.
-          </p> */}
 
           <Link href="/random">
-            <button className="btn btn-outline-light home_btn">
+            <button className="bg-blue-500 rounded-2xl px-4 py-2 home_btn">
               EXPLORE RANDOM
             </button>
           </Link>

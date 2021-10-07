@@ -11,22 +11,8 @@ const carddata = ({ data }) => {
   return (
     <div className="bg-gray-200">
       <Buttons />
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
-        <style jsx>
-          {`
-            .btn {
-              @apply font-bold py-2 px-4 rounded;
-            }
-            .btn-blue {
-              @apply bg-blue-500 text-white;
-            }
-            .btn-blue:hover {
-              @apply bg-blue-700;
-            }
-          `}
-        </style>
-
-        <div className="grid grid-cols-4 md:grid-cols-4 sm:grid-cols-1 grid-rows-3 gap-4 py-5">
+      <div className=" flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
+        <div className="grids gap-4 py-5 ">
           {data.message.map((data) => {
             return <SingleImage data={data} />;
           })}

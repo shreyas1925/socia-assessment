@@ -8,10 +8,7 @@ const random = ({ data }) => {
     <div className="bg-gray-200">
       <Buttons />
       <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+        {/*  */}
 
         <Images data={data.message} />
       </div>
