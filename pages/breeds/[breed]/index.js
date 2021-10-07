@@ -38,17 +38,3 @@ export const getServerSideProps = async (context) => {
     },
   };
 };
-
-// export const getStaticPaths = async () => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/`);
-//   const data = await res.json();
-
-//   const ids = data.map((carddata) => carddata.id);
-
-//   const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// };

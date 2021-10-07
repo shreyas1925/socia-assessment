@@ -7,7 +7,7 @@ const random = ({ data }) => {
   return (
     <div className="">
       <Buttons />
-      <div className="main">
+      <div className="">
         <Images data={data.message} />
       </div>
     </div>
