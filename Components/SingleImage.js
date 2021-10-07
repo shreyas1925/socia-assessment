@@ -12,11 +12,6 @@ const SingleImage = ({ data }) => {
             {/* <h2>{data}</h2> */}
           </div>
         </div>
-
-        {/* <div className="">
-            <h2>{data}</h2>
-          </div> */}
-        {/* </Link> */}
       </>
     </div>
   );
