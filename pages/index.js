@@ -2,21 +2,32 @@ import Head from "next/head";
 import BreedCards from "../Components/BreedCards";
 
 import Link from "next/link";
+import Banner from "../Components/Banner";
 export default function Home({ data }) {
   console.log(data.message);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <BreedCards data={data.message} />
+    <>
+      <Banner />
+      <div
+        className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200"
+        style={
+          {
+            // backgroundColor: "red",
+          }
+        }
+      >
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      {/* <div className="">
+        <BreedCards data={data.message} />
+
+        {/* <div className="">
         <Link href="/random">Hoi</Link>
       </div> */}
 
-      {/* <footer className="flex items-center justify-center w-full h-24 border-t">
+        {/* <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
         className="flex items-center justify-center"
         href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -27,7 +38,8 @@ export default function Home({ data }) {
         <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer> */}
-    </div>
+      </div>
+    </>
   );
 }
 

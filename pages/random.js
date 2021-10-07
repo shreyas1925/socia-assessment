@@ -1,16 +1,20 @@
 import Head from "next/head";
 import Images from "../Components/Images";
+import Buttons from "../Components/Buttons";
 
 const random = ({ data }) => {
   console.log(data);
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="bg-gray-200">
+      <Buttons />
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Images data={data.message} />
+        <Images data={data.message} />
+      </div>
     </div>
   );
 };

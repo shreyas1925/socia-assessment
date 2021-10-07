@@ -7,10 +7,12 @@ const SingleCard = ({ data }) => {
     <div>
       <>
         <Link href="/breeds/[breed]" as={`/breeds/${data}`}>
-          <div className="cursor-pointer hover:scale-105 transform transition duration-300 bg-white border-4 border-gray-400 border-solid h-80 w-80">
-            <div className="">
+          <div className="cursor-pointer hover:scale-105 transform transition duration-300 bg-white sha border-solid h-80 w-80 hover:shadow-lg shadow-md">
+            <div className="h-full flex justify-center items-center">
               {/* <Image src={img} layout="fill" className="md:rounded-xl" /> */}
-              <h2>{data}</h2>
+              <h2 className="capitalize font-semibold leading-8 text-lg">
+                {data}
+              </h2>
             </div>
           </div>
 

@@ -6,7 +6,7 @@ const SingleImage = ({ data }) => {
       <>
         {/* <Link href="/carddata/[id]" as={`/carddata/${carddata.id}`}> */}
 
-        <div className="cursor-pointer hover:scale-105 transform transition duration-300 bg-white  border-gray-400 border-solid h-80 w-80">
+        <div className="cursor-pointer hover:scale-105 transform transition duration-300 h-80 w-80">
           <div className="">
             <Image src={data} layout="fill" className="md:rounded-xl" />
             {/* <h2>{data}</h2> */}
