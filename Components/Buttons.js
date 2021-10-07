@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Buttons = () => {
   return (
-    <div className="flex justify-between px-48 cursor-pointer">
+    <div className="flex justify-around cursor-pointer">
       <Link href="/">
         <div className="mt-9 py-2 px-9 text-white border-2 bg-green-400 rounded-md hover:text-black hover:bg-white hover:border-green-400 ">
           Back

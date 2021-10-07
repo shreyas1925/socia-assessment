@@ -5,11 +5,9 @@ import Buttons from "../Components/Buttons";
 const random = ({ data }) => {
   console.log(data);
   return (
-    <div className="bg-gray-200">
+    <div className="">
       <Buttons />
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gray-200">
-        {/*  */}
-
+      <div className="main">
         <Images data={data.message} />
       </div>
     </div>

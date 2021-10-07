@@ -8,6 +8,7 @@ body {
 .home__intro {
   /* display: grid; */
   height: 70vh;
+  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../public/images/dogs_banner.jpg");
   background-repeat: no-repeat;
@@ -49,6 +50,31 @@ body {
   padding: 0.25rem 1rem;
 }
 
+.main {
+  height: 100vh;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.parent {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-gap: 18px;
+}
+
+.child {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 10px;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
 .grids {
   width: 90vw;
   display: grid;
@@ -56,6 +82,32 @@ body {
   grid-template-rows: repeat(2, minmax(300px, 1fr));
   grid-gap: 18px;
 }
-
 @media (max-width: 480px) {
+  .grids {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
+    grid-gap: 5px;
+  }
+}
+
+@media (max-width: 733px) {
+  .child {
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1022px) {
+  .parent {
+    width: 60vw;
+  }
 }
