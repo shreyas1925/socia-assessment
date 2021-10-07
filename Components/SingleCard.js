@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const SingleCard = ({ data }) => {
+  console.log("Simgle ", data);
+
   return (
     <div>
       <>
@@ -16,7 +18,6 @@ const SingleCard = ({ data }) => {
           <h2>{data}</h2>
         </div> */}
         </Link>
-        /
       </>
     </div>
   );
