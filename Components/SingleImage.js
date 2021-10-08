@@ -9,7 +9,6 @@ const SingleImage = ({ data }) => {
         <div className="cursor-pointer  hover:scale-105 transform transition duration-300 h-80 w-80">
           <div className="rounded-md">
             <Image src={data} layout="fill" className="md:rounded-xl" />
-            {/* <h2>{data}</h2> */}
           </div>
         </div>
       </>
